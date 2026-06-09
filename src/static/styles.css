@@ -16,6 +16,7 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
@@ -26,6 +27,48 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+.auth-shell {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.user-icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.user-icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.user-menu {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  min-width: 220px;
+  padding: 12px;
+  background: #fff;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+
+.user-menu p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.user-menu button {
+  width: 100%;
 }
 
 main {
@@ -190,6 +233,33 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modal-content {
+  width: min(92vw, 420px);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
 }
 
 footer {
